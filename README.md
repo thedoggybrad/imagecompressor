@@ -24,3 +24,6 @@ You can use this compressor when:
 ✓No server interactions for compression<br>
 ✓Device Hardware Dependent<br>
 ✓Internet Connection Independent
+
+## License
+This software uses the MIT License.
