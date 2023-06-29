@@ -26,4 +26,4 @@ You can use this compressor when:
 ✓Internet Connection Independent
 
 ## License
-This software uses the [MIT License](https://github.com/thedoggybrad/imagecompressor/blob/main/LICENSE).
+This software uses the [MIT License](https://github.com/thedoggybrad/imagecompressor/blob/main/LICENSE). It means that you may do whatever you want on this software, even without TheDoggyBrad's approval/permission and that is considered "legal", as of the MIT License.
