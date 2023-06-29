@@ -22,4 +22,5 @@ You can use this compressor when:
 ✓Works offline<br>
 ✓Everything is done on your side<br>
 ✓No server interactions for compression<br>
-✓Device Hardware Independent
+✓Device Hardware Dependent<br>
+✓Internet Connection Independent
