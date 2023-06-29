@@ -11,7 +11,7 @@ You can use this compressor when:
 <br>
 ✓An online form declines your image due to file sizing issues<br>
 ✓Your image file size is too big for file sharing or for website use<br>
-✓To help reduce bandwidth usage due to big file size
+✓To help reduce bandwidth usage due to a big image file size
 
 ## Features and Characteristics
 ✓No Data Collection<br>
