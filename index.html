@@ -19,16 +19,23 @@
             margin-top: 50px;
         }
 
-        #compressButton, #downloadButton {
-            margin-top: 20px;
+        #compressButton,
+        #downloadButton {
+            margin-top: 10px;
         }
 
         #result {
-            margin-top: 20px; 
+            margin-top: 20px;
         }
+
         #result img {
             max-width: 100%;
             height: auto;
+        }
+
+        #compressionPlaceholder {
+            font-weight: bold;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -38,7 +45,8 @@
         <h2>TheDoggyBrad Image Compressor</h2>
         <h4>Brought to you by <a style="color:black" href="https://github.com/thedoggybrad">TheDoggyBrad</a></h4>
         <p>A client side image compressor performed via JavaScript<br>
-      <i>Note: The compression speed depends on your device's hardware</i></p>
+            <i>Important: The compression speed depends on your device's hardware and on your web browser</i>
+        </p>
         <div class="form-group">
             <label for="imageInput">Upload an image:</label>
             <input type="file" class="form-control-file" id="imageInput" accept="image/*">
@@ -50,6 +58,9 @@
             <output for="quality" id="qualityOutput">60</output>
         </div>
 
+        <p>
+          Note: The compressed image can only be downloaded once, but you can recompress it again immediately by re-clicking the "Compress" button.
+        </p>
         <button id="compressButton" class="btn btn-primary" disabled>Compress</button>
         <button id="downloadButton" class="btn btn-success" disabled>Download</button>
 
@@ -121,34 +132,66 @@
                         // Get the compressed image data
                         var compressedImageData = canvas.toDataURL('image/jpeg', quality / 100);
 
-                       // Display the compressed image
+                        // Display the compression status placeholder
                         var resultElement = document.getElementById('result');
-                        resultElement.innerHTML = '<img src="' + compressedImageData + '">';
+                        resultElement.innerHTML = '<p id="compressionPlaceholder">Compressing image...</p>';
 
-                        // Enable the download button
+                        // Disable the download button during compression
                         var downloadButton = document.getElementById('downloadButton');
-                        downloadButton.disabled = false;
-                        downloadButton.addEventListener('click', function () {
-                            var a = document.createElement('a');
-                            a.href = compressedImageData;
-                            var originalFilename = file.name;
-                            var extensionIndex = originalFilename.lastIndexOf('.');
-                            var filenameWithoutExtension = originalFilename.substring(0, extensionIndex);
-                            var extension = originalFilename.substring(extensionIndex);
-                            var newFilename = filenameWithoutExtension + '_compressed' + extension;
-                            a.download = newFilename;
+                        downloadButton.disabled = true;
 
-                            document.body.appendChild(a);
-                            a.click();
-                            document.body.removeChild(a);
-                        });
+                        // Start the compression process
+                        setTimeout(function () {
+                            // Remove the compression status placeholder
+                            resultElement.innerHTML = '';
+
+                            // Create a new image element for the compressed image
+                            var compressedImageElement = document.createElement('img');
+                            compressedImageElement.src = compressedImageData;
+
+                            // Append the compressed image to the result element
+                            resultElement.appendChild(compressedImageElement);
+
+                            // Enable the download button
+                            downloadButton.disabled = false;
+                        }, 3000);
                     };
                 };
 
-
                 reader.readAsDataURL(file);
             });
+
+            $('#downloadButton').click(function () {
+                var compressedImageElement = document.querySelector('#result img');
+                if (compressedImageElement) {
+                    var a = document.createElement('a');
+                    a.href = compressedImageElement.src;
+                    var downloadFilename = getDownloadFilename(imageInput.files[0]);
+                    a.download = downloadFilename;
+
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+
+                    // Clear the compressed image
+                    compressedImageElement.parentNode.removeChild(compressedImageElement);
+
+                    // Disable the download button
+                    downloadButton.disabled = true;
+                }
+            });
+
         });
+
+        function getDownloadFilename(file) {
+            var originalFilename = file.name;
+            var extensionIndex = originalFilename.lastIndexOf('.');
+            var filenameWithoutExtension = originalFilename.substring(0, extensionIndex);
+            var extension = originalFilename.substring(extensionIndex);
+            var newFilename = filenameWithoutExtension + '_compressed' + extension;
+
+            return newFilename;
+        }
     </script>
 </body>
 </html>
