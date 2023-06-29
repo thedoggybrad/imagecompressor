@@ -24,7 +24,10 @@ You can use this compressor when:
 ✓No server interactions for compression<br>
 ✓Device Hardware Dependent<br>
 ✓Internet Connection Independent<br>
-✓Faster (vs Server-side solutions)<br>
+✓Faster (than server-side solutions)<br>
+
+## Limitations
+The "limitations" is not on the software itself. The "limitations" are defined by your web browser's capabilities and by your hardware capabilies.
 
 ## Software Licensing
 This software uses the [MIT License](https://github.com/thedoggybrad/imagecompressor/blob/main/LICENSE). It means that you may do whatever you want on this software, even without TheDoggyBrad's approval/permission and that is considered "legal", as of the MIT License.
