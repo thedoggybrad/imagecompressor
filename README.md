@@ -13,9 +13,9 @@ You can use this compressor when:
 ✓Your image file size is too big for file sharing or for website use<br>
 ✓To help reduce bandwidth usage due to big file size
 
-## Features 
+## Features and Characteristics
 ✓No Data Collection<br>
-✓Privacy-Friendly<br>
+✓100% Privacy-Friendly<br>
 ✓Quality Slider selection<br>
 ✓View Image before download<br>
 ✓Easy Download button<br>
@@ -23,7 +23,8 @@ You can use this compressor when:
 ✓Everything is done on your side<br>
 ✓No server interactions for compression<br>
 ✓Device Hardware Dependent<br>
-✓Internet Connection Independent
+✓Internet Connection Independent<br>
+✓Faster (vs Server-side solutions)<br>
 
-## License
+## Software Licensing
 This software uses the [MIT License](https://github.com/thedoggybrad/imagecompressor/blob/main/LICENSE). It means that you may do whatever you want on this software, even without TheDoggyBrad's approval/permission and that is considered "legal", as of the MIT License.
