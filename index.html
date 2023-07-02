@@ -38,6 +38,8 @@
             height: auto;
             border-style: dashed;
             color:#32de84;
+            border-width: thick;
+            padding: 10px;
         }
 
         #compressionPlaceholder 
@@ -150,7 +152,7 @@
 
                         // Display the compression status placeholder
                         var resultElement = document.getElementById('result');
-                        resultElement.innerHTML = '<p id="compressionPlaceholder">Compressing image...</p>';
+                        resultElement.innerHTML = '<p id="compressionPlaceholder">Please Wait and Be Ready!</p>';
 
                         // Disable the download button during compression
                         var downloadButton = document.getElementById('downloadButton');
