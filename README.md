@@ -25,6 +25,9 @@ You can use this compressor when:
 ✓Device Hardware Dependent<br>
 ✓Internet Connection Independent<br>
 ✓Faster (than server-side solutions)<br>
+✓No eye burnign sensations (a.k.a Force Dark Mode)<br>
+✓Compact Interface<br>
+✓Easy to learn, understand, use and operate
 
 ## Limitations
 The "limitations" is not on the software itself. The "limitations" are defined by your web browser's capabilities and by your hardware capabilies.
