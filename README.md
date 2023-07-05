@@ -25,7 +25,7 @@ You can use this compressor when:
 ✓Device Hardware Dependent<br>
 ✓Internet Connection Independent<br>
 ✓Faster (than server-side solutions)<br>
-✓No eye burnign sensations (a.k.a Force Dark Mode)<br>
+✓No eye burning sensations (a.k.a Force Dark Mode)<br>
 ✓Compact Interface<br>
 ✓Easy to learn, understand, use and operate
 
