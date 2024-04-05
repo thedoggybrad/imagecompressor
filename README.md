@@ -4,7 +4,8 @@
 A client side image compressor performed via JavaScript.
 
 ## Try it now!
-Try it out on https://thedoggybrad.github.io/imagecompressor
+Try it out on https://thedoggybrad.github.io/imagecompressor<br>
+Also available as a Progressive Web Application (PWA).
 
 ## Usages
 You can use this compressor when:
