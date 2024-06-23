@@ -1,5 +1,5 @@
-### Notice
-This project has reached its tail. TheDoggyBrad Image Compressor has now been replaced by [Downscayl](https://downscayl.github.io) on June 23, 2024. Downscayl can be accessed on [https://downscayl.github.io](https://downscayl.github.io). This project has been the foundation of the new Downscayl project. <br> With that, this project's website will offer you whether to go to the new Downscayl project or visit this retired project.<br>
+### This project has reached its tail.
+TheDoggyBrad Image Compressor has now been replaced by [Downscayl](https://downscayl.github.io) on June 23, 2024. Downscayl can be accessed on [https://downscayl.github.io](https://downscayl.github.io). This project has been the foundation of the new Downscayl project. <br> With that, this project's website will offer you whether to go to the new Downscayl project or visit this retired project.<br>
 After everything has been set to sunset, this repository shall turn to an archive.<br>
 Thank you!
 <br><br>
